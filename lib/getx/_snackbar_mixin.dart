@@ -1,7 +1,7 @@
 part of '../flutter_artist_getx_adapter.dart';
 
-mixin SnackbarMixin {
-  void showErrorSnackbar({
+mixin SnackBarMixin {
+  void showErrorSnackBar({
     required String message,
     required List<String>? errorDetails,
     Duration duration = const Duration(seconds: 4),
