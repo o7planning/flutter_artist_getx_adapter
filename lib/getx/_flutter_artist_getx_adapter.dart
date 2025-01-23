@@ -7,9 +7,4 @@ class FlutterArtistGetxAdapter
   BuildContext getCurrentContext() {
     return Get.context!;
   }
-
-  @override
-  void navigationBack() {
-    Get.back();
-  }
 }
