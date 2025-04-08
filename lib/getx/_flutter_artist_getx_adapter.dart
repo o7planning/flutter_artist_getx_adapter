@@ -2,7 +2,7 @@ part of '../flutter_artist_getx_adapter.dart';
 
 class FlutterArtistGetxAdapter
     with ProgressMixin, SnackBarMixin
-    implements FlutterArtistAdapter {
+    implements IFlutterArtistAdapter {
   @override
   BuildContext getCurrentContext() {
     return Get.context!;
