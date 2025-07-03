@@ -106,4 +106,59 @@ mixin SnackBarMixin {
       ),
     );
   }
+
+  @override
+  void showSavedSnackBar({Duration duration = const Duration(seconds: 2)}) {
+    Get.closeCurrentSnackbar();
+    //
+    Get.showSnackbar(
+      GetSnackBar(
+        padding: const EdgeInsets.all(5),
+        backgroundColor: Colors.transparent,
+        messageText: Theme(
+          data: ThemeData().copyWith(
+            dividerColor: Colors.transparent,
+            canvasColor: Colors.transparent,
+          ),
+          child: SizedBox(
+            height: 60,
+            child: Center(
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                width: 130,
+                decoration: BoxDecoration(
+                  color: Colors.green.shade200,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(20.0),
+                    bottomRight: Radius.circular(20.0),
+                    topLeft: Radius.circular(20.0),
+                    bottomLeft: Radius.circular(20.0),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.check,
+                      color: Colors.white,
+                    ),
+                    SizedBox(width: 5),
+                    Text(
+                      "Saved",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        duration: duration,
+      ),
+    );
+  }
 }
