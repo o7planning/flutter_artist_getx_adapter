@@ -125,9 +125,9 @@ mixin SnackBarMixin {
             child: Center(
               child: Container(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                width: 130,
+                width: 220,
                 decoration: BoxDecoration(
-                  color: Colors.green.shade200,
+                  color: Colors.green.shade300,
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(20.0),
                     bottomRight: Radius.circular(20.0),
@@ -145,7 +145,7 @@ mixin SnackBarMixin {
                     ),
                     SizedBox(width: 5),
                     Text(
-                      "Saved",
+                      "Successfully saved!",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
