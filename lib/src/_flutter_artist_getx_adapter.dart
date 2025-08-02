@@ -61,12 +61,12 @@ class FlutterArtistGetxAdapter implements IFlutterArtistAdapter {
   @override
   void showErrorSnackBar({
     required String message,
-    required List<String>? errorDetails,
+    required List<String>? details,
     Duration duration = const Duration(seconds: 4),
   }) {
     __showSnackBar(
       message: message,
-      details: errorDetails,
+      details: details,
       icon: const Icon(
         Icons.error,
         color: Colors.red,
