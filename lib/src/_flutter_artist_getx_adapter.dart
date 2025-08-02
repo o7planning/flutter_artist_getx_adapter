@@ -135,7 +135,10 @@ class FlutterArtistGetxAdapter implements IFlutterArtistAdapter {
   // ***************************************************************************
 
   @override
-  void showDeletedSnackBar({Duration duration = const Duration(seconds: 2)}) {
+  void showDeletedSnackBar({
+    String? customMessage,
+    Duration duration = const Duration(seconds: 2),
+  }) {
     Get.closeCurrentSnackbar();
     //
     Get.showSnackbar(
@@ -172,7 +175,7 @@ class FlutterArtistGetxAdapter implements IFlutterArtistAdapter {
                     ),
                     SizedBox(width: 5),
                     Text(
-                      "Successfully Deleted!",
+                      customMessage ?? "Successfully Deleted!",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
