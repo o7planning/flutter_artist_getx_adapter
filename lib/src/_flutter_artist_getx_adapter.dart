@@ -78,6 +78,25 @@ class FlutterArtistGetxAdapter implements IFlutterArtistAdapter {
   // ***************************************************************************
 
   @override
+  void showWarningSnackBar({
+    required String message,
+    required List<String>? details,
+    Duration duration = const Duration(seconds: 4),
+  }) {
+    __showSnackBar(
+      message: message,
+      details: null,
+      icon: const Icon(
+        Icons.warning_amber,
+        color: Colors.amber,
+      ),
+      duration: duration,
+    );
+  }
+
+  // ***************************************************************************
+
+  @override
   void showSavedSnackBar({Duration duration = const Duration(seconds: 2)}) {
     Get.closeCurrentSnackbar();
     //
