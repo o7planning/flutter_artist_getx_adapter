@@ -13,8 +13,8 @@ dependencies:
 
 
   get: ^5.0.0-release-candidate-9.3.2
-  flutter_artist:
-    path: ../flutter_artist
+  flutter_artist_core:
+    path: ../flutter_artist_core
 
 
 dev_dependencies:

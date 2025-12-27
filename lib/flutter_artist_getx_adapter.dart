@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_artist/flutter_artist.dart';
+import 'package:flutter_artist_core/flutter_artist_core.dart';
 import 'package:get/get.dart';
 
 part 'src/_app_base_controller.dart';
