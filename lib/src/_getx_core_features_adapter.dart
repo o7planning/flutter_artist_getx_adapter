@@ -3,14 +3,14 @@ part of '../flutter_artist_getx_adapter.dart';
 class GetxFlutterArtistCoreFeaturesAdapter
     implements FlutterArtistCoreFeaturesAdapter {
   @override
-  BuildContext getCurrentContext() {
+  BuildContext get context {
     return Get.context!;
   }
 
   // ***************************************************************************
 
   @override
-  Future<dynamic> showOverlay({
+  Future<dynamic> runWithOverlay({
     required Future<dynamic> Function() asyncFunction,
     double opacity = 0.2,
   }) async {
@@ -27,7 +27,7 @@ class GetxFlutterArtistCoreFeaturesAdapter
   // ***************************************************************************
 
   @override
-  bool isOverlaysOpen() {
+  bool get isOverlayOpen {
     return Get.isOverlaysOpen;
   }
 
@@ -41,7 +41,7 @@ class GetxFlutterArtistCoreFeaturesAdapter
   // ***************************************************************************
 
   @override
-  void showMessageSnackBar({
+  void showInfoSnackBar({
     required String message,
     List<String>? details,
     Duration duration = const Duration(seconds: 4),
