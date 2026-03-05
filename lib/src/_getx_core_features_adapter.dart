@@ -1,6 +1,7 @@
 part of '../flutter_artist_getx_adapter.dart';
 
-class GetxFlutterArtistCoreFeaturesAdapter implements ICoreFeaturesAdapter {
+class GetxFlutterArtistCoreFeaturesAdapter
+    implements FlutterArtistCoreFeaturesAdapter {
   @override
   BuildContext getCurrentContext() {
     return Get.context!;

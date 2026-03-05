@@ -1,6 +1,6 @@
 part of '../flutter_artist_getx_adapter.dart';
 
-class GetxFlutterArtistLocaleAdapter implements ILocaleAdapter {
+class GetxFlutterArtistLocaleAdapter implements FlutterArtistLocaleAdapter {
   final List<Locale> _supportedLocales;
 
   GetxFlutterArtistLocaleAdapter({required List<Locale> supportedLocales})
