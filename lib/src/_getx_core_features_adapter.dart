@@ -1,7 +1,7 @@
 part of '../flutter_artist_getx_adapter.dart';
 
 class GetxFlutterArtistCoreFeaturesAdapter
-    implements FlutterArtistCoreFeaturesAdapter {
+    implements FlutterArtistOverlayAdapter {
   @override
   BuildContext get context {
     return Get.context!;
